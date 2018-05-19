@@ -74,11 +74,16 @@ function goMusic(){
         if (err) {
             return console.log('Error occurred: ' + err);
         }
-        else {
-            console.log(JSON.stringify(data,null,2)); // print out whole returned obj
-            fs.appendFile("templog.txt",JSON.stringify(data,null,2),function(err){
-                if(err) console.log(err);
-            })
+        else {  //print out  the song's info
+            // console.log(JSON.stringify(data,null,2)); // print out whole returned obj
+            // fs.appendFile("templog.txt",JSON.stringify(data,null,2),function(err){
+            // if(err) console.log(err);
+            // });
+            console.log("Song name:" + data.tracks.items[0].name);  // limit to the first song            
+            console.log("Artist name:" + data.tracks.items[0].artists[0].name);  // limit to the first song
+            console.log("Song preview:" + data.tracks.items[0].external_urls.spotify);  // limit to the first song
+            console.log("Album:" + data.tracks.items[0].album.name);  // limit to the first song
+            console.log("Release date: " + data.tracks.items[0].album.release_date);  // limit to the first song
         }
     });
 }
