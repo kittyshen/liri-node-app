@@ -1,3 +1,6 @@
+//initial eviroment setting, import the .env key into the keys.js file the import it here
+require("dotenv").config();
+require("./keys");
 
 
 // first filter out the process.argv[2] as action what to do
@@ -7,6 +10,7 @@ switch (action){
     case "movie-this": goMovie();
 }
 
+// movie query call
 function goMovie (){
 
     var movieRequest = require("request");
@@ -45,7 +49,7 @@ function goMovie (){
     });
 }
 
-// spotify app usuage  client ID and Secret
+// spotify query call app usuage  
 var Spotify = require('node-spotify-api');
  
 var spotify = new Spotify(keys.spotify);
@@ -60,4 +64,23 @@ spotify.search({ type: 'track', query: 'All the Small Things' }, function(err, d
   }
  
 console.log(data); 
+});
+
+
+// twitter query call app usuage 
+var Twitter = require('twitter');
+var lilTwitter = new Twitter(keys.twitter);
+ 
+// var client = new Twitter({
+//   consumer_key: '',
+//   consumer_secret: '',
+//   access_token_key: '',
+//   access_token_secret: ''
+// });
+ 
+var params = {screen_name: 'nodejs'};
+lilTwitter.get('statuses/user_timeline', params, function(error, tweets, response) {
+  if (!error) {
+    console.log(tweets);
+  }
 });
