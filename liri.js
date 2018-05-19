@@ -1,13 +1,21 @@
 //initial eviroment setting, import the .env key into the keys.js file the import it here
 require("dotenv").config();
-require("./keys");
-
+var keys = require("./keys.js");  // need to assign the value to keys
 
 // first filter out the process.argv[2] as action what to do
 
 var action = process.argv[2]
 switch (action){
     case "movie-this": goMovie();
+}
+
+function getName(){
+    var name;
+    for(var i = 3; i< process.argv.length; i++){
+        if(i ==  3) name = process.argv[i];
+        else name += "+"+ process.argv[i];
+    }
+    return name;
 }
 
 // movie query call
@@ -17,10 +25,7 @@ function goMovie (){
     // // Grab or assemble the movie name and store it in a variable called "movieName"
     var movieName = "";
     // ...
-    for(var i = 3; i< process.argv.length; i++){
-        if(i ==  2) movieName = process.argv[i];
-        else movieName += "+"+ process.argv[i];
-    }
+    movieName = getName();
     console.log(movieName);
     // Then run a request to the OMDB API with the movie specified
     var queryUrl = "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=trilogy";
