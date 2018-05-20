@@ -157,3 +157,10 @@ function doWhatever(){
         // return data;
     });
 }
+
+//************************ */
+//bonus capture the log activity
+
+console.log = function() {};
+modLog2File = require("./module.js");
+modLog2File();
