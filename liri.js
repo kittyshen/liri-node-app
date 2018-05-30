@@ -3,7 +3,7 @@ require("dotenv").config();
 var fs = require("fs"); // added file system for log and other debugging purpose
 var keys = require("./keys.js");  // need to assign the value to keys
 
-var getname="";
+var getname;
 for(var i = 3; i< process.argv.length; i++){
     if(i ==  3) getname = process.argv[i];
     else getname += " "+ process.argv[i];
@@ -60,6 +60,15 @@ function goMovie (string){
         if (!err && response.statusCode === 200) {
             // log2File(data);
             // log2File(JSON.parse(data,null,2));
+            console.log("-----------------")
+            console.log("This movie's name is: " + JSON.parse(data).Title);
+            console.log("The movie's year is: " + JSON.parse(data).Year);
+            console.log("The movie's rating is: " + JSON.parse(data).imdbRating);
+            console.log("The movie's Rotten Tomatoes Rating is: " + JSON.parse(data).Ratings.Value);
+            console.log("Country where the moview was produced: " + JSON.parse(data).Country);
+            console.log("Language of the movie: " + JSON.parse(data).Language);
+            console.log("Plot of the movie: " + JSON.parse(data).Plot);
+            console.log("The movie's Actors are: " + JSON.parse(data).Actors);
             log2File("-------------------------------------------------");
             log2File("This movie's name is: " + JSON.parse(data).Title);
             log2File("The movie's year is: " + JSON.parse(data).Year);
@@ -71,6 +80,8 @@ function goMovie (string){
             log2File("The movie's Actors are: " + JSON.parse(data).Actors);
             if (JSON.parse(data).Title == "Mr. Nobody")
             {
+                console.log("If you haven't watched \"Mr. Nobody,\" then you should: http://www.imdb.com/title/tt0485947/");
+                console.log("It's on Netflix!") ;
              log2File("If you haven't watched \"Mr. Nobody,\" then you should: http://www.imdb.com/title/tt0485947/");
              log2File("It's on Netflix!") ;
             }
@@ -109,6 +120,12 @@ function goMusic(string){
             // fs.appendFile("templog.txt",JSON.stringify(data,null,2),function(err){
             // if(err) log2File(err);
             // });
+            console.log("-------------------------------------------------");
+            console.log("Song name:" + data.tracks.items[0].name);  // limit to the first song            
+            console.log("Artist name:" + data.tracks.items[0].artists[0].name);  // limit to the first song
+            console.log("Song preview:" + data.tracks.items[0].external_urls.spotify);  // limit to the first song
+            console.log("Album:" + data.tracks.items[0].album.name);  // limit to the first song
+            console.log("Release date: " + data.tracks.items[0].album.release_date);  // limit to the first song
             log2File("-------------------------------------------------");
             log2File("Song name:" + data.tracks.items[0].name);  // limit to the first song            
             log2File("Artist name:" + data.tracks.items[0].artists[0].name);  // limit to the first song
@@ -140,6 +157,7 @@ function goTwitter(string){
     lilTwitter.get('statuses/user_timeline', params, function(error, tweets, response) {
         if (!error&&response.statusCode ===200) {
             log2File("-------------------------------------------------");
+            console.log("-------------------------------------------------");
 
             // log2File(JSON.stringify(tweets,null,2)); 
             // fs.appendFile("templog.txt",JSON.stringify(tweets,null,2),function(err){
@@ -147,6 +165,8 @@ function goTwitter(string){
             // });
             //printing the tweets array obj
             for(var i =0 ;i <(tweets.length<20? tweets.length:20);i++){  // get less than 10 entry back 
+                console.log(tweets[i].user.name +" says : " +tweets[i].text);
+                
                 log2File(tweets[i].user.name +" says : " +tweets[i].text);
             }
         }

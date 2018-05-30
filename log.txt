@@ -1,76 +1,60 @@
 ----------***** new command here ******----------
-movie-this,house of flying daggers
+do-what-it-says,undefined
 -------------------------------------------------
-This movie's name is: House of Flying Daggers
-The movie's year is: 2004
-The movie's rating is: 7.6
+Song name:The Voice
+Artist name:Celtic Woman
+Song preview:https://open.spotify.com/track/2E3y6X63fbZCYJGELwRAWQ
+Album:A New Journey
+Release date: 2007-01-10
+----------***** new command here ******----------
+do-what-it-says,undefined
+-------------------------------------------------
+Song name:The Voice
+Artist name:Celtic Woman
+Song preview:https://open.spotify.com/track/2E3y6X63fbZCYJGELwRAWQ
+Album:A New Journey
+Release date: 2007-01-10
+----------***** new command here ******----------
+do-what-it-says,undefined
+-------------------------------------------------
+Song name:My Heart Will Go On - Love Theme from "Titanic"
+Artist name:Céline Dion
+Song preview:https://open.spotify.com/track/3oEHQmhvFLiE7ZYES0ulzv
+Album:Let's Talk About Love
+Release date: 1997-10-24
+----------***** new command here ******----------
+my-tweets,undefined
+-------------------------------------------------
+liribotProject says : continue populating this dummy account
+liribotProject says : hello more words needed
+liribotProject says : more testing going
+liribotProject says : testing 0002
+liribotProject says : reply testing
+liribotProject says : testing 001
+----------***** new command here ******----------
+spotify-this-song,undefined
+-------------------------------------------------
+Song name:The Sign
+Artist name:Ace of Base
+Song preview:https://open.spotify.com/track/0hrBpAOgrt8RXigk83LLNE
+Album:The Sign (US Album) [Remastered]
+Release date: 1993
+----------***** new command here ******----------
+spotify-this-song,my heart will go on
+Song name:My Heart Will Go On - Love Theme from "Titanic"
+-------------------------------------------------
+Artist name:Céline Dion
+Song preview:https://open.spotify.com/track/3oEHQmhvFLiE7ZYES0ulzv
+Album:Let's Talk About Love
+Release date: 1997-10-24
+----------***** new command here ******----------
+movie-this,matrix
+-------------------------------------------------
+This movie's name is: Matrix
+The movie's year is: 1993–
+The movie's rating is: 8.4
 The movie's Rotten Tomatoes Rating is: undefined
-Country where the moview was produced: China, Hong Kong
-Language of the movie: Mandarin
-Plot of the movie: A romantic police captain breaks a beautiful member of a rebel group out of prison to help her rejoin her fellows, but things are not what they seem.
-The movie's Actors are: Takeshi Kaneshiro, Andy Lau, Ziyi Zhang, Dandan Song
-----------***** new command here ******----------
-do-what-it-says,
--------------------------------------------------
-Song name:I Want It That Way
-Artist name:Backstreet Boys
-Song preview:https://open.spotify.com/track/6e40mgJiCid5HRAGrbpGA6
-Album:The Hits--Chapter One
-Release date: 2001-10-29
-----------***** new command here ******----------
-do-what-it-says,
--------------------------------------------------
-Song name:How Long
-Artist name:Charlie Puth
-Song preview:https://open.spotify.com/track/6wmAHw1szh5RCKSRjiXhPe
-Album:Voicenotes
-Release date: 2018-05-11
-----------***** new command here ******----------
-do-what-it-says,
--------------------------------------------------
-This movie's name is: The Matrix
-The movie's year is: 1999
-The movie's rating is: 8.7
-The movie's Rotten Tomatoes Rating is: undefined
-Country where the moview was produced: USA
+Country where the moview was produced: Canada
 Language of the movie: English
-Plot of the movie: A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.
-The movie's Actors are: Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving
-----------***** new command here ******----------
-my-tweets,twitter
--------------------------------------------------
-Twitter says : @CaseyNeistat 😎
-Twitter says : #YannyOrLaurel?
-
-With over 2.3 million Tweets sent in the debate, here are the results! 👇 https://t.co/FQBHGieJc6
-Twitter says : @Brettdier 🤔
-Twitter says : @akositatalino Just Retweets and likes.
-Twitter says : @dannolan And sometimes there's even a reply.
-Twitter says : @mtehuitz Sounds nice. 😉
-Twitter says : @PearlThusi Something to look forward to for the next 364 days. 🎈
-Twitter says : @FanumTV They've been putting in a lot of work.
-Twitter says : @jennaezarik Happy 11th! Here you go: 🎁
-Twitter says : @joshe Just a reminder that we are too.
-Twitter says : @LaurenSanderson The proof is in #WeMetOnTwitter.
-Twitter says : @Malak_Mendes Twitter is what's happening in the world and what people are talking about right now.
-Twitter says : @bilal_malllick Happy five years 💙💙💙💙💙
-Twitter says : @TheDragonHat Don't tell Cat Twitter.
-Twitter says : @Solomonkibs73 When scrolling takes priority &gt;
-Twitter says : @elizaskinner Counting Tweets &gt; counting sheep
-Twitter says : Two years after an accident left @albertopajariyo in a wheelchair and unable to communicate, he returned to Twitter… https://t.co/GBUh8nx9a1
-Twitter says : @bumi_dinasti How acute.
-Twitter says : RT @TwitterSupport: We recently found a bug that stored passwords unmasked in an internal log. We fixed the bug and have no indication of a…
-Twitter says : Twitter thanks all who shared on #WorldPressFreedomDay. 
-
-Follow the hashtag #ImAJournalistBecause to see stories b… https://t.co/2spyFnsvLD
-----------***** new command here ******----------
-do-what-it-says,
--------------------------------------------------
-This movie's name is: Gone with the Wind
-The movie's year is: 1939
-The movie's rating is: 8.2
-The movie's Rotten Tomatoes Rating is: undefined
-Country where the moview was produced: USA
-Language of the movie: English
-Plot of the movie: A manipulative woman and a roguish man conduct a turbulent romance during the American Civil War and Reconstruction periods.
-The movie's Actors are: Thomas Mitchell, Barbara O'Neil, Vivien Leigh, Evelyn Keyes
+Plot of the movie: Steven Matrix is one of the underworld's foremost hitmen until his luck runs out, and someone puts a contract out on him. Shot in the forehead by a .22 pistol, Matrix "dies" and finds ...
+The movie's Actors are: Nick Mancuso, Phillip Jarrett, Carrie-Anne Moss, John Vernon
